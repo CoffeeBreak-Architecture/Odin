@@ -1,0 +1,26 @@
+{
+  "name": "odin",
+  "version": "1.0.0",
+  "description": "Odin",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec -r dotenv/config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoffeeBreak-Architecture/Odin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoffeeBreak-Architecture/Odin/issues"
+  },
+  "homepage": "https://github.com/CoffeeBreak-Architecture/Odin#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mocha": "^8.4.0"
+  }
+}
