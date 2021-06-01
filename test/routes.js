@@ -5,14 +5,12 @@ const url = 'http://localhost:3020'
 describe ('Odin routes', function () {
     it ('POST /rooms', async function () {
         let response = await axios.post(url + '/rooms')
-        console.log(response.data)
         expect(response.data.id).to.exist
         expect(response.status).to.equal(201)
     })
 
     it ('GET /rooms/:roomId', async function () {
         let response = await axios.post(url + '/rooms')
-        console.log(response.data)
         let get = await axios.get(url + '/rooms/' + response.data.id)
         expect(get.data.id).to.equal(response.data.id)
         expect(get.data.id).to.exist
